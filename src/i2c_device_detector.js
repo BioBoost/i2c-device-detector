@@ -2,7 +2,7 @@ const DeviceListingGenerator = require('./device_listing_generator');
 
 class I2cDetector {
 
-  constructor(i2c, deviceDescriptors) {
+  constructor(i2c, deviceDescriptors={}) {
     this.i2c = i2c;
     this.deviceDescriptors = deviceDescriptors;
     this.devices = [];
