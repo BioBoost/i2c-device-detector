@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/BioBoost/i2c-device-detector#readme",
   "dependencies": {
-    "i2c-bus": "^5.1.0"
+    "i2c-bus": "^5.1.0",
+    "table": "^5.4.6"
   }
 }
