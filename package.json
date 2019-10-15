@@ -1,0 +1,24 @@
+{
+  "name": "i2c-device-detector",
+  "version": "1.0.0",
+  "description": "Configurable NodeJS lib for detecting i2c devices",
+  "main": "src/i2c_device_detector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioBoost/i2c-device-detector.git"
+  },
+  "keywords": [
+    "i2c",
+    "detect",
+    "device"
+  ],
+  "author": "Nico De Witte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BioBoost/i2c-device-detector/issues"
+  },
+  "homepage": "https://github.com/BioBoost/i2c-device-detector#readme"
+}
