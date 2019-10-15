@@ -1,15 +1,27 @@
+const DeviceListingGenerator = require('./device_listing_generator');
+
 class I2cDetector {
 
-  constructor(i2c) {
+  constructor(i2c, deviceDescriptors) {
     this.i2c = i2c;
+    this.deviceDescriptors = deviceDescriptors;
   }
 
   scan() {
-    this.devices = this.i2c.scanSync();
+    let devices = this.i2c.scanSync();
+    devices = devices.map( address => `0x${address.toString(16)}`).map(
+      address => [
+        address,
+        this.deviceDescriptors[address] ? this.deviceDescriptors[address] : 'unknown'
+      ]
+    );
+    return devices;
   }
 
   overview() {
-    console.log(this.devices);
+    let devices = this.scan();
+    devices.unshift(['I2C Address', 'Description']);
+    console.log(DeviceListingGenerator.generate(devices));
   }
 }
 
