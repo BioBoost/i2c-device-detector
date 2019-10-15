@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/BioBoost/i2c-device-detector/issues"
   },
-  "homepage": "https://github.com/BioBoost/i2c-device-detector#readme"
+  "homepage": "https://github.com/BioBoost/i2c-device-detector#readme",
+  "dependencies": {
+    "i2c-bus": "^5.1.0"
+  }
 }
