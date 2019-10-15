@@ -2,9 +2,14 @@ const {table} = require('table');
 
 class DeviceListingGenerator {
   static generate(devices) {
-    let config = {
+    let options = {
+      columns: {
+        0: {
+          alignment: 'center'
+        }
+      }
     };
-    return table(devices, config);
+    return table(devices, options);
   }
 }
 

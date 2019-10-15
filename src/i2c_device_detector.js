@@ -12,7 +12,7 @@ class I2cDetector {
     devices = devices.map( address => `0x${address.toString(16)}`).map(
       address => [
         address,
-        this.deviceDescriptors[address] ? this.deviceDescriptors[address] : 'unknown'
+        this.deviceDescriptors[address] ? this.deviceDescriptors[address].description : 'unknown'
       ]
     );
     return devices;
