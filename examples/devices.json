@@ -1,0 +1,11 @@
+{
+    "0x1b": {"description": "QT1070 Touch Sensor" },
+    "0x60": {"description": "TLC59116 LED Driver" },
+    "0x48": {"description": "MCP9800 Temperature Sensor" },
+    "0x68": {"description": "TLC59116 All Call Address" },
+    "0x19": {"description": "LSM303 - Accelerometer"},
+    "0x1e": {"description": "LSM303 - Magnetometer"},
+    "0x5f": {"description": "HTS221 Temperature and Humidity Sensor"},
+    "0x6a": {"description": "LSDM6DSM Accelerometer and Gyroscope"},
+    "0x50": {"description": "24AA64 EEPROM"}
+}
